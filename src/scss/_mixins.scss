@@ -1,0 +1,22 @@
+@use "variables";
+
+// medium
+@mixin bp-M {
+	@media screen and (min-width: variables.$bp-tablet) {
+		@content;
+	}
+}
+
+// large
+@mixin bp-L {
+	@media screen and (min-width: variables.$bp-desktop) {
+		@content;
+	}
+}
+
+// xl
+@mixin bp-XL {
+	@media screen and (min-width: variables.$bp-xl) {
+		@content;
+	}
+}
